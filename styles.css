@@ -1,0 +1,103 @@
+/* General Styling /
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/ Background Image for the Page /
+body::before {
+    content: "";
+    background: url('https://example.com/minecraft-background.jpg') no-repeat center center fixed; / Replace with an actual Minecraft background image URL /
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/ Main Header Styling /
+header {
+    background-color: #1D2B64;
+    background-image: linear-gradient(315deg, #1D2B64 0%, #F8CDDA 74%);
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #FFD700; / Gold color /
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFD700;
+}
+
+/ Content Area Styling /
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+/ Button Styling /
+.button {
+    background-color: #FF4500;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FF6347;
+}
+
+/ Footer Styling */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #1D2B64;
+    background-image: linear-gradient(315deg, #1D2B64 0%, #F8CDDA 74%);
+}
+
+footer p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+}
